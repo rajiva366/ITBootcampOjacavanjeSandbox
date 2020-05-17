@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32278" started-at="2020-05-17T14:52:08 CEST" finished-at="2020-05-17T14:52:40 CEST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32278" started-at="2020-05-17T14:52:08 CEST" finished-at="2020-05-17T14:52:40 CEST">
+      <class name="ProductsTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:ProductsTest@59e5ddf]" name="openBrowser" is-config="true" duration-ms="6487" started-at="2020-05-17T14:52:08 CEST" finished-at="2020-05-17T14:52:14 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="logInUser()[pri:0, instance:ProductsTest@59e5ddf]" name="logInUser" is-config="true" duration-ms="10613" started-at="2020-05-17T14:52:14 CEST" finished-at="2020-05-17T14:52:25 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInUser -->
+        <test-method status="PASS" signature="inicialization()[pri:0, instance:ProductsTest@59e5ddf]" name="inicialization" is-config="true" duration-ms="12" started-at="2020-05-17T14:52:25 CEST" finished-at="2020-05-17T14:52:25 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicialization -->
+        <test-method status="PASS" signature="increasePrice()[pri:1, instance:ProductsTest@59e5ddf]" name="increasePrice" duration-ms="10427" started-at="2020-05-17T14:52:25 CEST" finished-at="2020-05-17T14:52:35 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- increasePrice -->
+        <test-method status="PASS" signature="logOutUser()[pri:0, instance:ProductsTest@59e5ddf]" name="logOutUser" is-config="true" duration-ms="3667" started-at="2020-05-17T14:52:35 CEST" finished-at="2020-05-17T14:52:39 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutUser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:ProductsTest@59e5ddf]" name="closeBrowser" is-config="true" duration-ms="986" started-at="2020-05-17T14:52:39 CEST" finished-at="2020-05-17T14:52:40 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- ProductsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
