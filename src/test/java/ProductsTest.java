@@ -16,6 +16,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
@@ -71,6 +72,9 @@ public class ProductsTest {
 		productPage.clickProductsCard();
 		productPage.clickEditProducts();
 		productPage.increasePrice(100.00);
+		productPage.saveProdChange();
+		
+		Assert.assertEquals(productPage.savedProductChangesMessage(), "All updates succeeded");
 	}
 
 	@AfterClass

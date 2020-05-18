@@ -29,3 +29,5 @@ TXTTYPEPRODPRICE'//*[@id="create-edit-product"]/form/div[2]/div[1]/div/div[5]/in
 TXTNEWPRODUCTSAVECHANGESBUTTON'//*[@id="create-edit-product"]/form/div[3]/div/input[1]
 TXTADDEDPRODUCTMESSAGE'//*[@id="create-edit-product"]/form/div[1]/div/span
 TXTEDITPRODUCTS'//*[@id="sub-nav"]/ul/li[2]/a
+TXTSAVEPRODCHANGE'//*[@id="update_bulk"]/table/tbody/tr[7]/td/input[1]
+TXTSAVEDMESSAGE'//*[@id="content"]/div[1]/div[2]/div/span

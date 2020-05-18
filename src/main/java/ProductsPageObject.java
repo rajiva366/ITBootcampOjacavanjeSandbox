@@ -18,6 +18,8 @@ public class ProductsPageObject {
 	public static String TXTNEWPRODUCTSAVECHANGESBUTTON = "TXTNEWPRODUCTSAVECHANGESBUTTON";
 	public static String TXTADDEDPRODUCTMESSAGE = "TXTADDEDPRODUCTMESSAGE";
 	public static String TXTEDITPRODUCTS = "TXTEDITPRODUCTS";
+	public static String TXTSAVEPRODCHANGE = "TXTSAVEPRODCHANGE";
+	public static String TXTSAVEDMESSAGE = "TXTSAVEDMESSAGE";
 	
 	WebDriver driver;
 	Map<String, String> xPaths;
@@ -75,6 +77,17 @@ public class ProductsPageObject {
 			element.clear();
 			element.sendKeys(String.valueOf(increasedValue));
 		}
+	}
+	
+	public void saveProdChange() {
+		driver.findElement(By.xpath(xPaths.get(TXTSAVEPRODCHANGE))).click();
+	}
+	
+	public String savedProductChangesMessage() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xPaths.get(TXTSAVEDMESSAGE))));
+		WebElement message=driver.findElement(By.xpath(xPaths.get(TXTSAVEDMESSAGE)));
+		return message.getText();
 	}
 
 }
